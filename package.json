@@ -4,9 +4,9 @@
   "description": "Backend router for Six Guesses game",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "nodemon": "nodemon app.js"
+    "nodemon": "nodemon app.js",
+    "test": "jest"
   },
   "author": "Rozamo",
   "license": "ISC",
@@ -17,6 +17,13 @@
     "nodemon": "^2.0.15"
   },
   "devDependencies": {
+    "jest": "^27.5.1",
     "nodemon": "^2.0.15"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   }
 }
