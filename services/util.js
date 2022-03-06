@@ -1,4 +1,7 @@
 const getDifferenceString = (wordOfTheDay = "", attemptedWord = "") => {
+  if (wordOfTheDay.length !== 5 || attemptedWord.length !== 5)
+    return 'XXXXX';
+
   const charOccurArray = Array.from({ length: 26 }, () => 0);
   const diffenenceArr = Array.from({ length: 5 }, () => "B");
 

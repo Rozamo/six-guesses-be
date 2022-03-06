@@ -1,5 +1,5 @@
 const { MongoClient } = require("mongodb");
-const { throwIfError } = require("../error-utils.js");
+const { throwIfError } = require("../error-utils");
 
 const { MONGODB_USERNAME, MONGODB_PASSWORD, MONGODB_CLUSTER_URL } = process.env;
 const uri = `mongodb+srv://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@${MONGODB_CLUSTER_URL}/test?retryWrites=true&w=majority`;
