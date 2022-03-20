@@ -23,6 +23,7 @@ async function checkIfWordExists(attemptedWord = '') {
 
   await client.connect();
   const collection = client.db(databaseName).collection(collectionName);
+  console.log({ collection });
   const matchingWord = await collection.findOne({ value: attemptedWord });
 
   console.log({ matchingWord });
