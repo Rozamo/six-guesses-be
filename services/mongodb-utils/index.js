@@ -25,6 +25,8 @@ async function checkIfWordExists(attemptedWord = '') {
   const collection = client.db(databaseName).collection(collectionName);
   const matchingWord = await collection.findOne({ value: attemptedWord });
 
+  console.log({ matchingWord });
+
   if (matchingWord && matchingWord.value === attemptedWord)
     doesWordExist = true;
 
