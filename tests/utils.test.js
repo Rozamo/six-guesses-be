@@ -31,6 +31,77 @@ const TEST_CASES = [
       },
     ],
   },
+  {
+    wordOfTheDay: "TODAY",
+    attemptedData: [
+      {
+        attemptedWord: "AUDIO",
+        expectedDiffString: "YBGBY",
+      },
+      {
+        attemptedWord: "RADON",
+        expectedDiffString: "BYGYB",
+      },
+      {
+        attemptedWord: "MODAL",
+        expectedDiffString: "BGGGB",
+      },
+      {
+        attemptedWord: "TODAY",
+        expectedDiffString: "GGGGG",
+      },
+    ],
+  },
+  {
+    wordOfTheDay: "WATCH",
+    attemptedData: [
+      {
+        attemptedWord: "AUDIO",
+        expectedDiffString: "YBBBB",
+      },
+      {
+        attemptedWord: "SPARE",
+        expectedDiffString: "BBYBB",
+      },
+      {
+        attemptedWord: "CHALK",
+        expectedDiffString: "YYYBB",
+      },
+      {
+        attemptedWord: "YACHT",
+        expectedDiffString: "BGYYY",
+      },
+      {
+        attemptedWord: "HATCH",
+        expectedDiffString: "BGGGG",
+      },
+      {
+        attemptedWord: "BATCH",
+        expectedDiffString: "BGGGG",
+      },
+    ],
+  },
+  {
+    wordOfTheDay: "LAPSE",
+    attemptedData: [
+      {
+        attemptedWord: "AUDIO",
+        expectedDiffString: "YBBBB",
+      },
+      {
+        attemptedWord: "SPARE",
+        expectedDiffString: "YYYBG",
+      },
+      {
+        attemptedWord: "PASTE",
+        expectedDiffString: "YGYBG",
+      },
+      {
+        attemptedWord: "LAPSE",
+        expectedDiffString: "GGGGG",
+      },
+    ],
+  },
 ];
 
 describe("Tests for getDifferenceString utility function", () => {
